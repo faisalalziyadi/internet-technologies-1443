@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<title>Temperature Conversion</title>
+<script>
+function convert(){
+var ftemp = document.getElementById("tFah_id").value;
+var ctemp = (ftemp - 32)*5/9;
+document.getElementById('tCel_id').innerHTML = ctemp;
+}
+</script>
+</head>
+<body>
+<h1>fahrenheit to celsius conversion</h1>
+Temperature in Fehrenheit: <input id ="tFah_id" type="text"><br>
+<button type="button" onclick="convert();"> Convert to Celsius </button><br>
+Temperature in Celsius: <span id="tCel_id"></span>
+</body>
+</html>
